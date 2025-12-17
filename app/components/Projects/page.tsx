@@ -25,7 +25,7 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
           {/* Card 1 */}
-          <div className="group relative rounded-2xl overflow-hidden bg-background-card border border-white/5 md:col-span-2 lg:col-span-1 h-[400px] lg:h-[500px]">
+          <div className="group relative rounded-2xl overflow-hidden bg-background-card border border-white/5 md:col-span-2 lg:col-span-1 h-100 lg:h-125">
             <div className="absolute inset-0 overflow-hidden duotone-primary-secondary">
               <div
                 className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 relative"
@@ -34,14 +34,14 @@ export default function Projects() {
                     "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDBk1qaz64Ps2arktpIS6ZVDx63Dllyw9MK5p9gx377NPnURHmA6kh8FLziVW-_XH8oELfomNl95tcJRwOfSrUihKGJjd7EAabdrjvuqaqrVwGe7m6_8uUJgSTkdp8SbrdUdmlQRrofl9eK836gtLjDbeY0I0WGxt9D1vZzS6x8KNKeFIDI9ze26dodD2JGJMJJ5MIbKCa3c0Oo4WD0sk3_IOBijH8Y-j9Ish-ySH2KGJFE6BqEMKtYYZ5XABGkx89DWXnxVHoyT70')",
                 }}
               >
-                <div className="absolute inset-0 z-10 clip-path-polygon-[10%_0%,_100%_0%,_90%_100%,_0%_100%] bg-gradient-to-br from-accent-primary to-accent-secondary opacity-70 group-hover:opacity-90 transition-opacity duration-300" />
+                <div className="absolute inset-0 z-10 clip-path-polygon-[10%_0%,_100%_0%,_90%_100%,_0%_100%] bg-linear-to-br from-accent-primary to-accent-secondary opacity-70 group-hover:opacity-90 transition-opacity duration-300" />
                 <img
                   alt="Finance Dashboard Project"
                   className="absolute inset-0 w-full h-full object-cover mix-blend-screen opacity-70"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBk1qaz64Ps2arktpIS6ZVDx63Dllyw9MK5p9gx377NPnURHmA6kh8FLziVW-_XH8oELfomNl95tcJRwOfSrUihKGJjd7EAabdrjvuqaqrVwGe7m6_8uUJgSTkdp8SbrdUdmlQRrofl9eK836gtLjDbeY0I0WGxt9D1vZzS6x8KNKeFIDI9ze26dodD2JGJMJJ5MIbKCa3c0Oo4WD0sk3_IOBijH8Y-j9Ish-ySH2KGJFE6BqEMKtYYZ5XABGkx89DWXnxVHoyT70"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-transparent opacity-90 transition-opacity duration-300 z-20" />
+              <div className="absolute inset-0 bg-linear-to-t from-bg via-bg/60 to-transparent opacity-90 transition-opacity duration-300 z-20" />
             </div>
 
             <div className="absolute bottom-0 left-0 p-8 md:p-12 w-full z-30 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
