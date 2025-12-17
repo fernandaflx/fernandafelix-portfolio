@@ -11,7 +11,7 @@ export default function About() {
         <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end justify-between gap-6">
 
           <div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
               Sobre
               <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-secondary to-accent-tertiary">
                 mim

@@ -56,7 +56,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className="glass-panel p-8 md:p-10 rounded-3xl border border-white/5 shadow-2xl flex flex-col gap-6"
     >
-      {/* Nome */}
+
       <div>
         <label
           htmlFor="name"
@@ -70,10 +70,9 @@ export default function ContactForm() {
           type="text"
           placeholder="Seu nome"
           className={`w-full bg-black/40 border rounded-lg p-4 text-white transition-all focus:outline-none focus:ring-1 focus:ring-accent-primary
-            ${
-              errors.name
-                ? "border-red-500"
-                : "border-white/10 focus:border-accent-primary"
+            ${errors.name
+              ? "border-red-500"
+              : "border-white/10 focus:border-accent-primary"
             }`}
         />
         {errors.name && (
@@ -83,7 +82,6 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Email */}
       <div>
         <label
           htmlFor="email"
@@ -103,10 +101,9 @@ export default function ContactForm() {
           type="email"
           placeholder="seu@email.com"
           className={`w-full bg-black/40 border rounded-lg p-4 text-white transition-all focus:outline-none focus:ring-1 focus:ring-accent-primary
-            ${
-              errors.email
-                ? "border-red-500"
-                : "border-white/10 focus:border-accent-primary"
+            ${errors.email
+              ? "border-red-500"
+              : "border-white/10 focus:border-accent-primary"
             }`}
         />
         {errors.email && (
@@ -116,7 +113,6 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Mensagem */}
       <div>
         <label
           htmlFor="message"
@@ -129,10 +125,9 @@ export default function ContactForm() {
           id="message"
           placeholder="Conte sobre seu projeto..."
           className={`w-full bg-black/40 border rounded-lg p-4 text-white transition-all resize-none h-32 focus:outline-none focus:ring-1 focus:ring-accent-primary
-            ${
-              errors.message
-                ? "border-red-500"
-                : "border-white/10 focus:border-accent-primary"
+            ${errors.message
+              ? "border-red-500"
+              : "border-white/10 focus:border-accent-primary"
             }`}
         />
         {errors.message && (
@@ -142,15 +137,13 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* Botão */}
       <button
         type="submit"
         disabled={!isValid || isSubmitting}
         className={`w-full py-4 rounded-lg font-bold text-lg transition-all flex items-center justify-center
-          ${
-            !isValid || isSubmitting
-              ? "bg-white/10 text-white/40 cursor-not-allowed"
-              : "bg-linear-to-r from-accent-primary to-accent-secondary text-white hover:shadow-[0_0_20px_rgba(217,70,239,0.4)] hover:scale-[1.02]"
+          ${!isValid || isSubmitting
+            ? "bg-white/10 text-white/40 cursor-not-allowed"
+            : "bg-linear-to-r from-accent-primary to-accent-secondary text-white hover:shadow-[0_0_20px_rgba(217,70,239,0.4)] hover:scale-[1.02]"
           }`}
       >
         {isSubmitting ? (
@@ -163,7 +156,6 @@ export default function ContactForm() {
         )}
       </button>
 
-      {/* Sucesso */}
       {showSuccess && (
         <p className="text-green-400 font-bold text-center animate-fade-in">
           Mensagem enviada com sucesso! ✨

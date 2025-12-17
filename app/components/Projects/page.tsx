@@ -7,7 +7,7 @@ export default function Projects() {
 
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6 bg-background-card/50 p-6 rounded-lg">
           <div>
-            <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-2">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-2">
               Projetos em <br /> 
               <span className="text-gradient">Destaque</span>
             </h2>
