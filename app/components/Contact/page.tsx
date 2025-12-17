@@ -48,7 +48,7 @@ export default function Contact() {
               Tem um projeto em mente ou quer apenas trocar uma ideia? Me mande uma mensagem!
             </p>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-row md:flex-col gap-6">
               {contactLinks.map(({ label, href, icon: Icon, external }) => (
                 <a
                   key={label}
@@ -61,7 +61,7 @@ export default function Contact() {
                     <Icon className="w-4 h-4 group-hover:text-white" />
                   </div>
 
-                  <span>{label}</span>
+                  <span className="hidden md:inline">{label}</span>
                 </a>
               ))}
             </div>
