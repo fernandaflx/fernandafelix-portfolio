@@ -36,7 +36,10 @@ export default function Hero() {
                 Ver portfolio <MoveRight />
               </span>
             </a>
-            <a className="px-8 py-4 border border-white/20 hover:border-white/50 text-white font-medium rounded-lg transition-all hover:bg-white/5" href="#contato">
+            <a className="px-8 py-4 border border-white/20 hover:border-white/50 text-white font-medium rounded-lg transition-all hover:bg-white/5"
+              href="/Resume-Fernanda_Leite_Felix.pdf"
+              download
+            >
               Baixar CV
             </a>
           </div>
