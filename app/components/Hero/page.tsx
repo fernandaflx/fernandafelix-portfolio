@@ -1,5 +1,6 @@
 
 import { ChevronDown, MoveRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -48,10 +49,13 @@ export default function Hero() {
           <div className="absolute inset-0 bg-linear-to-tr from-accent-primary to-accent-secondary rounded-4xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
           <div className="relative w-full max-w-md aspect-4/5 rounded-4xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-500 group-hover:rotate-y-6 group-hover:scale-[1.02]">
             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent z-10"></div>
-            <img alt="Portrait of a female front-end developer in a creative workspace"
+            <Image
+              src="/profile-photo.jpg"
+              alt="Foto de Fernanda Felix"
+              width={800}
+              height={1000}
               className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDir9uDiwAdTidpuMDB9RR3yUl4ZhCdSZ1JIxKXbalRuESDJZ36tYgJFBFZgdFyuvlRZss5Rzv4qxrdMIfGhk2HIGBgG1w5Jca2-05uMruSXgSPu4esYXovGwurB4_NqAbuVzmjO4OCSIiQdvkoXxPElOo30wz5vT4kcmzYAieWsr6ktmCNNDHxcNdhAhtuBTvPzAjhcXUfPFjvuERT-CGLeobo_54X6PFneW_O00IsKhBMt0ZVOhastpLcBghunPzywBn7fHucdIQ" />
-
+            />
           </div>
         </div>
       </div>
