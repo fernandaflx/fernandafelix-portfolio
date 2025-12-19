@@ -41,7 +41,12 @@ export default function ProjectCard({
   index,
 }: ProjectCardProps) {
 
-  const style = CARD_STYLES[index % CARD_STYLES.length];
+  // const style = CARD_STYLES[index % CARD_STYLES.length];
+  const style =
+    typeof index === "number"
+      ? CARD_STYLES[index % CARD_STYLES.length]
+      : CARD_STYLES[0];
+
 
   return (
     <div
