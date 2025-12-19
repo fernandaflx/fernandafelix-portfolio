@@ -1,4 +1,5 @@
 import { Eye, Code2 } from "lucide-react";
+import Image from "next/image";
 
 type ProjectCardProps = {
   title: string;
@@ -41,7 +42,6 @@ export default function ProjectCard({
   index,
 }: ProjectCardProps) {
 
-  // const style = CARD_STYLES[index % CARD_STYLES.length];
   const style =
     typeof index === "number"
       ? CARD_STYLES[index % CARD_STYLES.length]
@@ -64,18 +64,23 @@ export default function ProjectCard({
         >
           <div
             className={`
-              absolute inset-0 z-10
-              ${style.clipClass}
-              opacity-70 group-hover:opacity-90
-              transition-opacity duration-300
-            `}
+        absolute inset-0 z-10
+        ${style.clipClass}
+        opacity-70 group-hover:opacity-90
+        transition-opacity duration-300
+      `}
           />
-          <img
+
+          <Image
             alt={title}
-            className="absolute inset-0 w-full h-full object-cover mix-blend-screen opacity-70"
             src={imageUrl}
+            fill
+            className="object-cover mix-blend-screen opacity-70"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            priority={index === 0}
           />
         </div>
+
         <div className="absolute inset-0 bg-linear-to-t from-bg via-bg/40 to-transparent opacity-90 transition-opacity duration-300 z-20" />
       </div>
 
