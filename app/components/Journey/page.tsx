@@ -4,7 +4,7 @@ export default function Journey() {
 
   return (
     <section
-      className="w-full py-24 px-4 bg-black/40 relative overflow-hidden z-0"
+      className="w-full py-16 sm:py-24 bg-black/40 relative overflow-hidden z-0"
       id="journey"
     >
       <div className="absolute inset-y-0 left-1/2 w-px bg-linear-to-b from-transparent via-accent-primary/30 to-transparent -translate-x-1/2 hidden md:block" />
